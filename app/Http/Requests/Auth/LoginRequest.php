@@ -49,6 +49,15 @@ class LoginRequest extends FormRequest
             ]);
         }
 
+        $user = Auth::user();
+        if (!$user->is_active) {
+            Auth::logout();
+            RateLimiter::clear($this->throttleKey);
+            throw ValidationException::withMessages([
+                'email' => 'Tu cuenta está inactiva. Por favor, contacta al administrador.',
+            ]);
+        }
+
         RateLimiter::clear($this->throttleKey());
     }
 
