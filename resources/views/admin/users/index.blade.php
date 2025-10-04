@@ -43,7 +43,7 @@
                                             <form method="POST" action="{{ route('admin.users.activate', $user) }}">
                                                 @csrf
                                                 @method('PUT')
-                                                <button type="submit" class="text-sm bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-3 rounded">
+                                                <button type="submit" class="text-sm bg-green-500 hover:bg-green-700 font-bold py-1 px-3 rounded">
                                                     Activar Cuenta
                                                 </button>
                                             </form>

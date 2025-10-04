@@ -1,0 +1,15 @@
+[90m= [39m[34;4mIlluminate\Support\Collection[39;24m {#5379
+    [34mall[39m: [
+      "[32mview-users[39m",
+      "[32mcreate-users[39m",
+      "[32medit-users[39m",
+      "[32mdelete-users[39m",
+      "[32mactivate-users[39m",
+      "[32mview-roles[39m",
+      "[32mcreate-roles[39m",
+      "[32medit-roles[39m",
+      "[32mdelete-roles[39m",
+      "[32maccess-admin-panel[39m",
+    ],
+  }
+
